@@ -26,3 +26,17 @@ html {
   }
 
 /* Begin Custom Styles */
+main {
+    background-color: orange;
+}
+main > div {
+    background-color: red;
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+}
+
+main > div > div {
+    background-color: blue;
+}
