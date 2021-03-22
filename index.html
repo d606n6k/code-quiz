@@ -11,14 +11,26 @@
     <header>
         <nav>
             <ul>
-                <li>View Highscores</li>
+                <!-- I will need to call the function to clear the high scores OR reset the page -->
+                <li><a href="#">View Highscores</a></li>
                 <li>Time: <span id="time-span">0</span></li>
             </ul>
         </nav>
     </header>
     <main>
         <div>
-            <div id="code-card-swapper">test</div>
+            <div id="code-card-swapper">
+                <div id="card-start" class="card"" data-cards="hidden">
+                    <h2>Welcome to the Code Quiz!</h2>
+                    <p>In this quiz, you will be tasked with answering coding questions related to what we have review during the last 2 weeks of class! This is a multiple choice test. There are a total of 5 questions.</p>
+                    <button id="quiz-start-btn">Start Quiz</button>
+                </div>
+                <div class="card" data-cards="hidden">Card 2</div>
+                <div class="card" data-cards="hidden">Card 3</div>
+                <div class="card" data-cards="hidden">Card 4</div>
+                <div class="card" data-cards="hidden">Card 5</div>
+                <div class="card highscores" data-cards="hidden">Card 5</div>
+            </div>
         </div>
     </main>
     <script src="assets/scripts/scripts.js"></script>

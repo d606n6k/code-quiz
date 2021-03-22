@@ -26,6 +26,7 @@ html {
   }
 
 /* Begin Custom Styles */
+
 main {
     background-color: orange;
 }
@@ -37,6 +38,17 @@ main > div {
     justify-content: center;
 }
 
+/* Test code for layout */
 main > div > div {
     background-color: blue;
+}
+
+.card {
+    text-align: center;
+    width: 500px;
+    padding: 15px;
+}
+
+.card button {
+    margin-top: 14px;
 }
