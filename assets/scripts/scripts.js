@@ -23,4 +23,12 @@ document.getElementById("quiz-start-btn").onclick = function(){quizStart()};
 
 function quizStart(){
     console.log("This function has worked when the button was clicked!");
+    // start the timer
+   var timer = document.getElementById("time-span");
+   for (i = 0 ; i < 99; i++){
+     timer++;
+   }
+
 };
+
+// Clear HighScore and Start The Questions Over
