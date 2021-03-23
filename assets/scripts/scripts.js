@@ -14,6 +14,7 @@
 // WHEN the game is over
 // THEN I can save my initials and my score
 
+// FIRST PASS/ITERATION PSEUDO-CODE
 // Pseudo-Code
 // start page html
 // - start div with the following elements
@@ -37,6 +38,31 @@
 // - question: String
 // - options: String[]
 // - answer: String (one of the options)
+
+// SECOND PASS PSEUDO-CODE
+// when the start button gets clicked
+// hide welcom div (contains the start button, instructions, and title)
+// display the first question
+// start the timer
+// def fn hideWelcomeDiv
+// let welcomeDiv = select element with id welcomeDiv
+// apply "hidden" class to welcomeDiv
+// def fn showFirstQuestion
+// let firstQuestion = select element with id firstQuestion
+// remove "hidden" class from firstQuestion
+// def fn startTimer
+// let timer = select element with id time-span
+// let time = 90
+// CREATE INTERVAL to run every second
+//   decrement time by 1
+//   set text of timer to time
+//   IF time === 0
+//     STOP INTERVAL
+// WHEN an answer gets clicked
+//   ....
+//   IF last question
+//     stop timer
+//     ... other game ending steps
 
 // Global Variable Handles
 var cardContainer = document.getElementById("#code-card-swapper");
