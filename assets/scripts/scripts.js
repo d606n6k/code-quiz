@@ -1,3 +1,4 @@
+// User Story
 // GIVEN I am taking a code quiz
 // WHEN I click the start button
 // - I will need a start button in my html - DONE
@@ -13,20 +14,45 @@
 // WHEN the game is over
 // THEN I can save my initials and my score
 
+// Pseudo-Code
+// start page html
+// - start div with the following elements
+// -- title
+// -- start quiz btn
+// -- directions
+// - time: 0
+// - view high scores link
+// add a little css don't make it perfect yet
+// quiz js
+// create variables for referencing els
+// - start div
+// - high scores link
+// - time
+// - start btn
+// vars for values
+// - timeRemaining
+// - highScores
+// - questions: Array of questions
+// Question Object
+// - question: String
+// - options: String[]
+// - answer: String (one of the options)
+
 // Global Variable Handles
 var cardContainer = document.getElementById("#code-card-swapper");
 var cardStart = document.getElementById("card-start");
 var question = document.querySelector("card"); 
+var quizBtn = document.getElementById("quiz-start-btn");
 
 // Quiz Start 
-document.getElementById("quiz-start-btn").onclick = function(){quizStart()};
+quizBtn.onclick = function(){quizStart();};
 
 function quizStart(){
     console.log("This function has worked when the button was clicked!");
     // start the timer
    var timer = document.getElementById("time-span");
    for (i = 0 ; i < 99; i++){
-     timer++;
+     timer.innerHTML++;
    }
 
 };
