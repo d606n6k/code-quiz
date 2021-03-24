@@ -91,10 +91,10 @@ function quizStart(){
     // remove the starter card
     cardStart.classList.add("hidden");
     document.getElementById("q1").classList.remove("hidden");
-    // for (let i = 0; i < 5; i++) {
-    //   document.getElementById(`q${i}`).classList.remove("hidden");
-    //   document.getElementById(`q${i-1}`).classList.add("hidden");
-    // }
+    for (let i = 0; i < 5; i++) {
+      document.getElementById(`q${i}`).classList.remove("hidden");
+      document.getElementById(`q${i-1}`).classList.add("hidden");
+    }
   
 };
 
