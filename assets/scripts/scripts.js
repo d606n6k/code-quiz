@@ -55,35 +55,10 @@ var rightAnswers = {
   question5: "a"
 }
 
-// SECOND PASS PSEUDO-CODE
-// when the start button gets clicked
 quizBtn.onclick = function(){quizStart();};
-// hide welcome div (contains the start button, instructions, and title)
-// display the first question
-// start the timer
-// def fn hideWelcomeDiv
-// let welcomeDiv = select element with id welcomeDiv
-// apply "hidden" class to welcomeDiv
-// def fn showFirstQuestion
-// let firstQuestion = select element with id firstQuestion
-// remove "hidden" class from firstQuestion
-// def fn startTimer
-// let timer = select element with id time-span
-// let time = 90
-// CREATE INTERVAL to run every second
-//   decrement time by 1
-//   set text of timer to time
-//   IF time === 0
-//     STOP INTERVAL
-// WHEN an answer gets clicked
-//   ....
-//   IF last question
-//     stop timer
-//     ... other game ending steps
 
 function quizStart(){
-    console.log("This function has worked when the button was clicked!");
-    
+    // console.log("This function has worked when the button was clicked!");
       // start the timer
       startTimer = setInterval(clock, 1000);
       timer.textContent = time;
@@ -91,12 +66,29 @@ function quizStart(){
     // remove the starter card
     cardStart.classList.add("hidden");
     document.getElementById("q1").classList.remove("hidden");
-    for (let i = 0; i < 5; i++) {
-      document.getElementById(`q${i}`).classList.remove("hidden");
-      document.getElementById(`q${i-1}`).classList.add("hidden");
-    }
-  
+    // for (let i = 0; i < 5; i++) {
+    //   document.getElementById(`q${i}`).classList.remove("hidden");
+    //   document.getElementById(`q${i-1}`).classList.add("hidden");
+    // }
+    
 };
+
+// Clicked Answer Button
+document.querySelectorAll('#orderlist > [data-answer]').forEach(el => {
+  el.addEventListener('click', function () {
+      if (this.dataset.answer === "right") {
+          q1.classList.add('hidden')
+          q2.classList.remove('hidden')
+          // store this answer in local storage
+      } else {
+          q1.classList.add('hidden')
+          q2.classList.remove('hidden')
+          // seconds get taken away 
+          // check if timer is less than 0. Do not show next
+          // store this answer in local storage
+      }
+  })
+});
 
 // timer function
 function clock(){
