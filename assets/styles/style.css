@@ -52,3 +52,11 @@ main > div > div {
 .card button {
     margin-top: 14px;
 }
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: initial;
+}
