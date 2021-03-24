@@ -54,7 +54,6 @@ var rightAnswers = {
   question4: "d",
   question5: "a"
 }
-console.log(rightAnswers.question1);
 
 // SECOND PASS PSEUDO-CODE
 // when the start button gets clicked
@@ -91,12 +90,11 @@ function quizStart(){
 
     // remove the starter card
     cardStart.classList.add("hidden");
-    document.getElementById("q``${i}").classList.remove("hidden");
-    for (let i = 0; i < 5; i++) {
-      document.getElementById(`q${i}`).classList.remove("hidden");
-      document.getElementById(`q${i-1}`).classList.add("hidden");
-      
-    }
+    document.getElementById("q1").classList.remove("hidden");
+    // for (let i = 0; i < 5; i++) {
+    //   document.getElementById(`q${i}`).classList.remove("hidden");
+    //   document.getElementById(`q${i-1}`).classList.add("hidden");
+    // }
   
 };
 
