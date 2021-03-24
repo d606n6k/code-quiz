@@ -17,7 +17,7 @@ GitHub CLI: gh repo clone d606n6k/code-quiz
 ```
 
 ## Usage
-Click the 'Star Quiz' button to begin the quiz!
+Click the 'Start Quiz' button to begin the quiz!
 
 
 ## Credits
